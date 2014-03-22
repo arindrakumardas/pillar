@@ -4,5 +4,7 @@
     <string name="app_name">pillar</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="Choose">Choose a time</string>
+    <string name="Set">Confirm</string>
 
 </resources>
