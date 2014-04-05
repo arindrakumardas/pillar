@@ -15,20 +15,49 @@
 
     <Button
         android:id="@+id/set_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="112dp"
-        android:text="@string/Set" />
+        android:layout_alignParentLeft="true"
+        android:background="#900090"
+        android:text="@string/Set"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
 
     <TextView
         android:id="@+id/tvTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/set_button"
-        android:layout_alignLeft="@+id/set_button"
-        android:layout_marginBottom="91dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="86dp"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btnChangeTime"
+        android:layout_centerVertical="true"
+        android:text="Set your reminder"
+        android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/info"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/info" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView1"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/bluetooth_disconnected" />
+    
 </RelativeLayout>

@@ -6,5 +6,9 @@
     <string name="hello_world">Hello world!</string>
     <string name="Choose">Choose a time</string>
     <string name="Set">Confirm</string>
+    <string name="logo">logo</string>
+    <string name="name">Name</string>
+    <string name="email">Enter your e-mail</string>
+    <string name="pillar">Enter the pillar number</string>
 
 </resources>
