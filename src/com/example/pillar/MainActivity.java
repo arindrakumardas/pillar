@@ -28,7 +28,6 @@ public class MainActivity extends Activity {
 				// This method will be executed once the timer is over
 				Intent i = new Intent(MainActivity.this, SettingsActivity.class);
 				startActivity(i);
-
 				// close this activity
 				finish();
 			}
