@@ -26,7 +26,7 @@ public class MainActivity extends Activity {
 			@Override
 			public void run() {
 				// This method will be executed once the timer is over
-				Intent i = new Intent(MainActivity.this, SettingsActivity.class);
+				Intent i = new Intent(MainActivity.this, InstructionActivity.class);
 				startActivity(i);
 				// close this activity
 				finish();

@@ -10,5 +10,10 @@
     <string name="name">Name</string>
     <string name="email">Enter your e-mail</string>
     <string name="pillar">Enter the pillar number</string>
+    <string name="Medication">medication is now ...</string>
+    <string name="Fashion">a fashion statement</string>
+    <string name="instructionblue1">Keep the Pill-ar \nnear the phone</string>
+    <string name="instructionblue2">Turn on Pill-ar\&#x27;s \nbluetooth</string>
+    <string name="setremind">Set your reminder</string>
 
 </resources>

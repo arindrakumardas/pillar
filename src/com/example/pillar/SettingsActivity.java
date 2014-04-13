@@ -21,18 +21,18 @@ import android.widget.TimePicker;
 import android.widget.Toast;
 
 public class SettingsActivity extends Activity {
-
-	private TextView tvDisplayTime;
-	private Button btnChangeTime;
-	private int hour;
-	private int minute;
+//
+//	private TextView tvDisplayTime;
+//	private Button btnChangeTime;
+//	private int hour;
+//	private int minute;
 
 	static final int TIME_DIALOG_ID = 999;
 
 
 	private static final int REQUEST_ENABLE_BT = 1;
 	private BluetoothAdapter btAdapter = null;
-	private BluetoothSocket btSocket = null;
+//	private BluetoothSocket btSocket = null;
 	private OutputStream outStream = null;
 
 	// Well known SPP UUID
@@ -47,8 +47,8 @@ public class SettingsActivity extends Activity {
 		//Log.d(TAG, "In onCreate()");
 		setContentView(R.layout.settings_view);
 
-		setCurrentTimeOnView();
-		addListenerOnButton(); 
+//		setCurrentTimeOnView();
+//		addListenerOnButton(); 
 		btAdapter = BluetoothAdapter.getDefaultAdapter();
 		checkBTState();
 
@@ -115,69 +115,69 @@ public class SettingsActivity extends Activity {
 
 
 	// display current time
-	public void setCurrentTimeOnView() {
+//	public void setCurrentTimeOnView() {
+//
+//		tvDisplayTime = (TextView) findViewById(R.id.tvTime);
+//		//timePicker1 = (TimePicker) findViewById(R.id.timePicker1);
+//
+//		final Calendar c = Calendar.getInstance();
+//		hour = c.get(Calendar.HOUR_OF_DAY);
+//		minute = c.get(Calendar.MINUTE);
+//
+//		// set current time into textview
+//		tvDisplayTime.setText(new StringBuilder().append(pad(hour)).append(":")
+//				.append(pad(minute)));
+//	}
+//
+//	public void addListenerOnButton() {
+//
+//		btnChangeTime = (Button) findViewById(R.id.btnChangeTime);
+//
+//		btnChangeTime.setOnClickListener(new OnClickListener() {
+//
+//			@SuppressWarnings("deprecation")
+//			@Override
+//			public void onClick(View v) {
+//
+//				showDialog(TIME_DIALOG_ID);
+//
+//			}
+//
+//		});
+//
+//	}
 
-		tvDisplayTime = (TextView) findViewById(R.id.tvTime);
-		//timePicker1 = (TimePicker) findViewById(R.id.timePicker1);
-
-		final Calendar c = Calendar.getInstance();
-		hour = c.get(Calendar.HOUR_OF_DAY);
-		minute = c.get(Calendar.MINUTE);
-
-		// set current time into textview
-		tvDisplayTime.setText(new StringBuilder().append(pad(hour)).append(":")
-				.append(pad(minute)));
-	}
-
-	public void addListenerOnButton() {
-
-		btnChangeTime = (Button) findViewById(R.id.btnChangeTime);
-
-		btnChangeTime.setOnClickListener(new OnClickListener() {
-
-			@SuppressWarnings("deprecation")
-			@Override
-			public void onClick(View v) {
-
-				showDialog(TIME_DIALOG_ID);
-
-			}
-
-		});
-
-	}
-
-	@Override
-	protected Dialog onCreateDialog(int id) {
-		switch (id) {
-		case TIME_DIALOG_ID:
-			// set time picker as current time
-			return new TimePickerDialog(this, timePickerListener, hour, minute,
-					false);
-
-		}
-		return null;
-	}
-
-	private TimePickerDialog.OnTimeSetListener timePickerListener = new TimePickerDialog.OnTimeSetListener() {
-		public void onTimeSet(TimePicker view, int selectedHour,
-				int selectedMinute) {
-			hour = selectedHour;
-			minute = selectedMinute;
-
-			// set current time into textview
-			tvDisplayTime.setText(new StringBuilder().append(pad(hour))
-					.append(":").append(pad(minute)));
-
-		}
-	};
-
-	private static String pad(int c) {
-		if (c >= 10)
-			return String.valueOf(c);
-		else
-			return "0" + String.valueOf(c);
-	}
+//	@Override
+//	protected Dialog onCreateDialog(int id) {
+//		switch (id) {
+//		case TIME_DIALOG_ID:
+//			// set time picker as current time
+//			return new TimePickerDialog(this, timePickerListener, hour, minute,
+//					false);
+//
+//		}
+//		return null;
+//	}
+//
+//	private TimePickerDialog.OnTimeSetListener timePickerListener = new TimePickerDialog.OnTimeSetListener() {
+//		public void onTimeSet(TimePicker view, int selectedHour,
+//				int selectedMinute) {
+//			hour = selectedHour;
+//			minute = selectedMinute;
+//
+//			// set current time into textview
+//			tvDisplayTime.setText(new StringBuilder().append(pad(hour))
+//					.append(":").append(pad(minute)));
+//
+//		}
+//	};
+//
+//	private static String pad(int c) {
+//		if (c >= 10)
+//			return String.valueOf(c);
+//		else
+//			return "0" + String.valueOf(c);
+//	}
 
 
 

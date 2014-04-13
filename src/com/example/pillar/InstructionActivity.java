@@ -11,27 +11,30 @@ import android.content.Intent;
 
 public class InstructionActivity extends Activity {
 
+	/**
+	 * The splash screen timer.
+	 */
+	private static int SPLASH_TIME_OUT = 5000;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.instruction_view);
+		new Handler().postDelayed(new Runnable() {
 
+			/*
+			 * Showing splash screen with a timer. This will be useful when you
+			 * want to show case your app logo / company
+			 */
 
-		// Play (Resume) Button
-		Button playBtn = (Button) findViewById(R.id.info);
-		playBtn.setOnClickListener(new OnClickListener() {
-	
 			@Override
-			public void onClick(View arg0) {
-				Intent intent = new Intent(InstructionActivity.this, SettingsActivity.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("finishstatus", true);
-                startActivity(intent);
-                finish();
+			public void run() {
+				// This method will be executed once the timer is over
+				Intent i = new Intent(InstructionActivity.this, SettingsActivity.class);
+				startActivity(i);
+				// close this activity
+				finish();
 			}
-		});
-
-
+		}, SPLASH_TIME_OUT);
 	}
 }
