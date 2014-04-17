@@ -52,17 +52,17 @@ public class SettingsActivity extends Activity {
 		btAdapter = BluetoothAdapter.getDefaultAdapter();
 		checkBTState();
 
-		 final Button button = (Button) findViewById(R.id.info);
-         button.setOnClickListener(new View.OnClickListener() {
-             public void onClick(View v) {
-            	// This method will be executed once the timer is over
- 				Intent i = new Intent(SettingsActivity.this, InstructionActivity.class);
- 				startActivity(i);
- 				// close this activity
- 				finish();
-
-             }
-         });	
+//		 final Button button = (Button) findViewById(R.id.info);
+//         button.setOnClickListener(new View.OnClickListener() {
+//             public void onClick(View v) {
+//            	// This method will be executed once the timer is over
+// 				Intent i = new Intent(SettingsActivity.this, InstructionActivity.class);
+// 				startActivity(i);
+// 				// close this activity
+// 				finish();
+//
+//             }
+//         });	
 		
 
 	}
