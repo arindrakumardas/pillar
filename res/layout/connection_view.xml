@@ -11,6 +11,7 @@
             android:layout_alignLeft="@+id/tvconnected1"
             android:layout_alignParentTop="true"
             android:layout_marginTop="57dp"
+            android:visibility="invisible"
             android:text="CONNECTED"
             android:textColor="#FFFFFF" />
 

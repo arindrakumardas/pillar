@@ -12,7 +12,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="86dp"
         android:textColor="#FFFFFF"
-        android:text="Successfully reloaded time" />
+        android:text="Successfully loaded" />
     
 
 </RelativeLayout>
